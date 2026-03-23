@@ -81,8 +81,7 @@ section {
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 700;
-    transition: 0.5s ease;
-    padding: 5px 15px;
+    padding: 5px 20px;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
@@ -92,8 +91,10 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-    background: var(--main-color);
-    color: #00aaff;
+    border: 2px solid #00aaff;
+    border-radius: 25px;
+    background: #00aaff;
+    color: white;
     box-shadow: 0 0 15px var(--main-color);
     transform: scale(1.2);
 }
@@ -642,7 +643,6 @@ span {
     }
 }
 
-/* ================= PREMIUM PRELOADER ================= */
 
 #preloader {
     position: fixed;

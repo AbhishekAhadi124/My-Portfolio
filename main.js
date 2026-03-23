@@ -73,6 +73,24 @@ window.addEventListener("load", () => {
     }, 2200); // match progress animation timing
 });
 
+(function(){
+    emailjs.init("BWng4O7Q_dvQYqF0s");
+})();
+
+document.getElementById("contact-form")
+.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_mk8re38", "template_trw3jmw", this)
+    .then(function() {
+        alert("Message Sent Successfully ✅");
+        document.getElementById("contact-form").reset();
+    }, function(error) {
+        alert("Failed to send message ❌");
+        console.log(error);
+    });
+});
+
 
 
 
